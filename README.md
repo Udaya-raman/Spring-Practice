@@ -62,8 +62,10 @@ The project consists of five main classes and interfaces:
    cd weather-application
    
 2. Build the application:
+    ```bash
       mvn clean install
-3. Run the application:
+4. Run the application:
+   ```bash
      mvn spring-boot:run
 
 
