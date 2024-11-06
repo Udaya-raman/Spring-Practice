@@ -67,5 +67,24 @@ The project consists of five main classes and interfaces:
 4. Run the application:
    ```bash
      mvn spring-boot:run
+   
+## API Endpoints
+-GET /api/weather/all: Returns a list of all weather records.
+-GET /api/weather/{city}: Returns weather details for a specific city.
+-POST /api/weather/create: Adds a new weather record (expects JSON payload).
+-PUT /api/weather/{id}: Updates an existing weather record by ID (expects JSON payload).
+-DELETE /api/weather/{id}: Deletes a weather record by ID.
 
+## Configuration
+You can configure default weather settings in application.properties using the weather prefix, e.g.,:
+```bash
+weather.defaultCondition=Sunny
+weather.cityTemperatureRanges.NewYork.min=0
+weather.cityTemperatureRanges.NewYork.max=30
+
+## Technologies Used
+-Spring Boot: For building the REST API.
+-Spring Data JPA: For database operations.
+-Hibernate: For ORM mapping.
+-MySQL: Database to store weather records (or any other configured database).
 
