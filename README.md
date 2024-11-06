@@ -82,9 +82,4 @@ weather.defaultCondition=Sunny
 weather.cityTemperatureRanges.NewYork.min=0
 weather.cityTemperatureRanges.NewYork.max=30
 
-## Technologies Used
--Spring Boot: For building the REST API.
--Spring Data JPA: For database operations.
--Hibernate: For ORM mapping.
--MySQL: Database to store weather records (or any other configured database).
 
